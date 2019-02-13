@@ -1,0 +1,92 @@
+@mixin byebye {
+  display: none;
+}
+
+@mixin minimizer {
+     width: 25px;
+     height: 25px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.secondary-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#awwwards-logo {
+  width: 15%;
+  height: 15%;
+}
+
+#mag-glass {
+  @include minimizer;
+}
+
+#mag-glass2 {
+  @include minimizer;
+  visibility: hidden;
+  z-index: 2;
+}
+
+#green-background {
+  background-color: #49c5b6;
+  color: white;
+  padding: 20px;
+  font-size: 13px;
+}
+
+#safety-cone {
+  width: 2%;
+  height: 2%;
+}
+
+#wee-pips {
+  @include minimizer;
+}
+
+.columnizer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+.columnizer > img {
+  max-width: 419px;
+  max-height: 435px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  #tv-size {
+    @include byebye;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #mag-glass {
+    @include byebye;
+  }
+  #mag-glass2 {
+    z-index: 2;
+    visibility: visible;
+  }
+  #reg-login {
+    @include byebye;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .secondary-bar {
+    @include byebye;
+  }
+  #green-background {
+    @include byebye;
+  }
+}
