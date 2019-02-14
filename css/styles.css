@@ -1,50 +1,93 @@
+body {
+  font-family: "apercu",sans-serif;
+  background-color: #f4f7f6; }
+
+#awwwards-logo {
+  width: 50%;
+  margin-left: 30%; }
+
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center;
+  height: 69px;
+  border-bottom: 1px solid #E6EAEA; }
+
+.menuAndMag {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 .secondary-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: 1px solid #E6EAEA; }
 
-#awwwards-logo {
-  width: 15%;
-  height: 15%; }
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.tabs a {
+  position: relative;
+  line-height: 73px;
+  width: 120px;
+  height: 69px;
+  border-left: 1px solid #E6EAEA;
+  font-size: 13px;
+  text-align: center;
+  font-size-adjust: auto; }
+
+a {
+  color: black; }
+  a:link {
+    text-decoration: none; }
+
+.mr-pips {
+  display: flex;
+  justify-content: flex-end; }
 
 #mag-glass {
-  width: 25px;
-  height: 25px; }
+  width: 50px;
+  height: auto; }
 
 #mag-glass2 {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: auto;
   visibility: hidden;
   z-index: 2; }
 
 #green-background {
   background-color: #49c5b6;
   color: white;
-  padding: 20px;
-  font-size: 13px; }
+  font-size: 13px;
+  height: 70px; }
 
-#safety-cone {
-  width: 2%;
-  height: 2%; }
-
-#wee-pips {
-  width: 25px;
-  height: 25px; }
+#safety-cone, #wee-pips {
+  width: auto;
+  height: 80%; }
 
 .columnizer {
+  padding-top: 50px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  max-width: 1913px;
+  margin: 0px auto; }
 
 .columnizer > img {
   max-width: 419px;
   max-height: 435px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px; }
 
 @media screen and (max-width: 1440px) {
   #tv-size {
